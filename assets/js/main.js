@@ -73,81 +73,81 @@ document.addEventListener('DOMContentLoaded', () => {
     // Services content data extracted from the PDF profile
     const servicesData = {
         ads: {
-            title: "Dịch Vụ Quảng Cáo (ADS)",
-            desc: "DST Group triển khai chiến dịch quảng cáo đa kênh tối ưu chi phí, tiếp cận tệp khách hàng tiềm năng chính xác và nâng cao tỷ lệ chuyển đổi doanh số.",
+            title: "Dịch Vụ Quảng Cáo Đa Kênh (ADS)",
+            desc: "DST Group xây dựng và triển khai các chiến dịch quảng cáo đa kênh thực chiến (Facebook, Google, TikTok, Zalo). Chúng tôi tập trung tối đa vào chỉ số chuyển đổi, tối ưu chi phí CPA và nâng cao tỷ suất sinh lời ROI trên từng đồng ngân sách quảng cáo của bạn.",
             img: "assets/images/service_ads.png",
             bullets: [
-                "Quảng cáo Facebook & Instagram tối ưu",
-                "Quảng cáo Google Search & GDN phủ rộng",
-                "Quảng cáo Tiktok Ads chuyển đổi cao",
-                "Quảng cáo Zalo tiếp cận khách hàng",
-                "Quản lý ngân sách & Báo cáo minh bạch",
-                "Tối ưu chi phí CPA, nâng cao ROI"
+                "Tối ưu ngân sách quảng cáo đa kênh, bám sát CPA",
+                "Quảng cáo Facebook & Instagram nhắm đúng tệp",
+                "Quảng cáo Google Search & GDN phủ rộng thị trường",
+                "Quảng cáo Tiktok Ads chuyển đổi cao, bám đuổi tốt",
+                "Quản lý ngân sách & Báo cáo số liệu minh bạch",
+                "Gia tăng tỷ lệ chuyển đổi đơn hàng & Tối ưu ROI"
             ]
         },
         tiktok: {
-            title: "TikTok Shop Partner & MCN",
-            desc: "Là đối tác chính thức MCN & TSP của TikTok tại Quảng Ninh, chúng tôi đồng hành cùng các cá nhân (Creator) và doanh nghiệp (Seller) tăng trưởng doanh thu nổi bật trên nền tảng.",
+            title: "TikTok Shop Partner & MCN TikTok",
+            desc: "Là đối tác chính thức TSP & MCN của TikTok tại Quảng Ninh, chúng tôi giúp cá nhân (Creators) và doanh nghiệp (Sellers) bùng nổ đơn hàng, xây dựng kênh triệu view, tối ưu giỏ hàng chuẩn SEO và kết nối mạng lưới KOC/KOL livestream thực chiến.",
             img: "assets/images/service_tiktok.png",
             bullets: [
-                "Tư vấn định hướng xây kênh cá nhân/doanh nghiệp",
-                "Setup gian hàng Tiktok Shop chuẩn SEO",
-                "Hỗ trợ Livestream (Cho thuê phòng Live miễn phí)",
-                "Kết nối KOC/KOL đa dạng mạng lưới",
-                "Đăng tải & Tối ưu sản phẩm bị giới hạn",
-                "Giải quyết khiếu nại, giảm lỗi chính sách"
+                "Xây dựng & Định hướng kênh TikTok cá nhân/doanh nghiệp",
+                "Setup & Vận hành gian hàng TikTok Shop chuẩn SEO",
+                "Cho thuê phòng Live & Hỗ trợ kỹ thuật Livestream thực tế",
+                "Kết nối KOC/KOL đa dạng mạng lưới tăng trưởng doanh thu",
+                "Hỗ trợ mở khóa sản phẩm bị giới hạn & Giải quyết lỗi",
+                "Kháng nghị & Tối ưu chính sách vận hành TikTok Shop"
             ]
         },
         design: {
-            title: "Thiết Kế & Branding chuyên nghiệp",
-            desc: "Thiết lập nền tảng nhận diện thương hiệu chuyên nghiệp, mang tính thẩm mỹ cao giúp khẳng định uy tín doanh nghiệp trên thị trường.",
+            title: "Thiết Kế Thương Hiệu & Web Độc Bản",
+            desc: "Định hình vị thế thương hiệu bằng thiết kế Web/Landing Page, Logo và Hồ sơ năng lực độc bản, chuyên nghiệp. Một giao diện và ấn phẩm đẳng cấp sẽ giúp nâng cao uy tín sản phẩm, cho phép bạn bán với giá cao hơn đối thủ cạnh tranh.",
             img: "assets/images/service_design.png",
             bullets: [
-                "Thiết kế Website & Landing page chuẩn SEO",
-                "Thiết kế Logo & Bộ nhận diện thương hiệu",
-                "Thiết kế Hồ sơ năng lực (Profile công ty)",
-                "Thiết kế ấn phẩm in ấn: Voucher, Standee, Flyer",
-                "Thiết kế banner hình ảnh truyền thông đa kênh",
-                "Định vị và chuẩn hóa hình ảnh thương hiệu"
+                "Thiết kế Website & Landing page tối ưu CRO chuẩn SEO",
+                "Thiết kế Logo & Bộ nhận diện thương hiệu chuyên nghiệp",
+                "Thiết kế Hồ sơ năng lực (Profile công ty) thu hút đối tác",
+                "Thiết kế ấn phẩm truyền thông: Voucher, Standee, Flyer",
+                "Thiết kế banner & Hình ảnh quảng cáo đa kênh bắt mắt",
+                "Chuẩn hóa hình ảnh thương hiệu tạo độ tin cậy tuyệt đối"
             ]
         },
         studio: {
-            title: "Studio & Media",
-            desc: "Sản xuất hình ảnh, video chất lượng cao giúp truyền tải thông điệp thương hiệu một cách sinh động, ấn tượng và tăng độ tin cậy đối với khách hàng.",
+            title: "Studio & Media Thực Chiến",
+            desc: "Sản xuất hình ảnh chất lượng cao và video ngắn (TikTok, Reels, Shorts) có nội dung lôi cuốn, giữ chân người xem. DST Group mang đến các kịch bản TVC và video quảng cáo sáng tạo, kích thích khách hàng ra quyết định mua hàng ngay lập tức.",
             img: "assets/images/service_studio.png",
             bullets: [
-                "Quay TVC giới thiệu sản phẩm & doanh nghiệp",
-                "Chụp ảnh sản phẩm, dịch vụ chuyên nghiệp",
-                "Chụp ảnh sự kiện doanh nghiệp thường niên",
-                "Edit video bài chạy quảng cáo thu hút",
-                "Quay dựng video ngắn (Tiktok, Reels, Shorts)",
-                "Xây dựng kịch bản truyền thông sáng tạo"
+                "Quay TVC giới thiệu sản phẩm & doanh nghiệp chuyên nghiệp",
+                "Chụp ảnh sản phẩm, dịch vụ làm tư liệu chạy Ads đỉnh cao",
+                "Sản xuất video ngắn (TikTok, Reels, Shorts) lên xu hướng",
+                "Xây dựng kịch bản truyền thông sáng tạo, thu hút khách",
+                "Quay dựng video quảng cáo thực chiến tăng chuyển đổi",
+                "Chụp ảnh sự kiện, hội nghị truyền thông doanh nghiệp"
             ]
         },
         setup: {
-            title: "Setup Nhà Hàng - Khách Sạn - Du Thuyền",
-            desc: "Tư vấn chiến lược và setup vận hành trọn gói chuỗi Nhà hàng - Khách sạn - Du thuyền từ khâu hoạch định phương hướng đến triển khai chi tiết.",
+            title: "Tư Vấn & Setup Vận Hành Trọn Gói",
+            desc: "Chuyển giao giải pháp và setup quy trình vận hành tinh gọn, chuyên nghiệp cho chuỗi Nhà hàng - Khách sạn - Du thuyền. Chúng tôi giúp bạn tối ưu hóa chi phí đầu tư ban đầu, đào tạo nhân sự bài bản và lập kế hoạch khai trương bùng nổ doanh số.",
             img: "assets/images/service_setup.png",
             bullets: [
-                "Xây dựng phương hướng & kế hoạch phát triển",
-                "Thiết kế sơ đồ quy trình vận hành chi tiết",
-                "Tuyển dụng & Đào tạo chuyên môn nhân sự",
-                "Tư vấn xây dựng thực đơn & setup bếp",
-                "Xây dựng kịch bản truyền thông khai trương",
-                "Chuyển giao công nghệ quản lý hiện đại"
+                "Xây dựng phương hướng chiến lược & Kế hoạch phát triển",
+                "Thiết kế quy trình vận hành chuẩn hóa cho từng bộ phận",
+                "Tuyển dụng & Đào tạo nghiệp vụ nhân sự khách sạn/nhà hàng",
+                "Tư vấn xây dựng thực đơn (Menu) & Sơ đồ setup bếp",
+                "Lập kế hoạch truyền thông khai trương bùng nổ khách",
+                "Chuyển giao phần mềm & Công nghệ quản trị hiện đại"
             ]
         },
         booking: {
-            title: "Dịch Vụ Booking & Content",
-            desc: "Kết nối thương hiệu với mạng lưới KOLs/KOCs tầm ảnh hưởng và phát triển kho nội dung giá trị định hình phong cách thương hiệu.",
+            title: "Dịch Vụ Booking KOLs & Content Creator",
+            desc: "Kết nối doanh nghiệp với mạng lưới KOC/KOL đa dạng phân khúc, gia tăng uy tín và độ phủ thương hiệu lập tức. DST Group xây dựng chiến lược content sâu sắc chạm tới cảm xúc khách hàng, tăng trưởng đơn hàng bền vững.",
             img: "assets/images/service_booking.png",
             bullets: [
-                "Booking KOLs/KOCs đa dạng phân khúc tệp khách",
-                "Booking ca sĩ, diễn viên, người mẫu sự kiện",
-                "Xây dựng nội dung (Content) sáng tạo đa kênh",
-                "Quản lý lịch trình và đo lường hiệu quả booking",
-                "Đào tạo PR cá nhân trở thành Idol Livestream",
-                "Quản trị truyền thông phủ sóng thương hiệu"
+                "Booking KOC/KOL đa dạng phân khúc bám sát tệp khách",
+                "Booking ca sĩ, người mẫu, người nổi tiếng cho sự kiện lớn",
+                "Xây dựng chiến lược nội dung (Content) chạm cảm xúc khách",
+                "Quản lý lịch trình, kịch bản & Đo lường hiệu quả booking",
+                "Đào tạo kỹ năng Livestream bùng nổ cho Creators",
+                "Tối ưu hóa độ phủ thương hiệu và niềm tin khách hàng"
             ]
         }
     };
