@@ -269,6 +269,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================================================
+    // 3D TILT & MOUSE SPOTLIGHT EFFECT (DESKTOP ONLY)
+    // ==========================================================================
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    if (!isTouchDevice) {
+        const hoverCards = document.querySelectorAll('.bento-card, .glass-card');
+        hoverCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
+                card.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((centerY - y) / centerY) * 2.5; // Max 2.5 degrees tilt
+                const rotateY = ((x - centerX) / centerX) * 2.5;
+                
+                card.style.transform = `perspective(1000px) translateY(-6px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    }
+
+    // ==========================================================================
     // RIVE PLAYER INITIALIZATION
     // ==========================================================================
     const riveCanvas = document.getElementById('rive-canvas');

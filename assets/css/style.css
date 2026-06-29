@@ -4,32 +4,32 @@
    Target: Clean, Modern, Responsive & Animating UI
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap');
 
 /* ==========================================================================
    CSS VARIABLES & DESIGN TOKENS
    ========================================================================== */
 :root {
     /* Color Palette */
-    --bg-dark-deep: #f5f8f7;      /* Clean light green/gray background */
-    --bg-dark-base: #ffffff;      /* White base */
-    --bg-dark-card: #ffffff;      /* White cards */
-    --bg-dark-hover: #eff5f3;     /* Soft hover green/gray */
+    --bg-dark-deep: #f6faf9;      /* Warmer, cream-tinted slate background */
+    --bg-dark-base: #ffffff;      /* Pure white base */
+    --bg-dark-card: rgba(255, 255, 255, 0.72); /* Translucent glass card background */
+    --bg-dark-hover: rgba(239, 245, 243, 0.6); /* Translucent hover state */
     
-    --color-primary: #bf8b1d;     /* Deep gold for readability on light bg */
+    --color-primary: #a37210;     /* Deep refined corporate gold for readability */
     --color-primary-light: #cf972a;/* Brand gold */
-    --color-primary-glow: rgba(207, 151, 42, 0.15);
+    --color-primary-glow: rgba(207, 151, 42, 0.12);
     
-    --text-white: #0a1c18;        /* Very dark forest green for headings */
-    --text-main: #1d332f;         /* Dark body text */
+    --text-white: #061f1a;        /* Ultra dark slate-green for high-contrast headings */
+    --text-main: #192e2b;         /* Refined body text */
     --text-muted: #5e7772;        /* Muted gray-green */
     
-    --border-glass: rgba(14, 62, 52, 0.08);
-    --border-gold: rgba(191, 139, 29, 0.3);
-    --border-gold-hover: rgba(191, 139, 29, 0.7);
+    --border-glass: rgba(14, 62, 52, 0.07);
+    --border-gold: rgba(163, 114, 16, 0.2);
+    --border-gold-hover: rgba(163, 114, 16, 0.6);
     
-    --glass-blur: blur(8px);
-    --glass-shadow: 0 10px 30px rgba(14, 62, 52, 0.04);
+    --glass-blur: blur(16px);     /* High blur for premium translucent feel */
+    --glass-shadow: 0 15px 35px rgba(14, 62, 52, 0.05);
     
     /* Layout & Spacing */
     --max-width: 1200px;
@@ -57,6 +57,59 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    position: relative;
+}
+
+/* ==========================================================================
+   AURORA GLOW & EDITORIAL TYPOGRAPHY
+   ========================================================================== */
+.serif-italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: none;
+    color: var(--color-primary-light);
+    position: relative;
+    display: inline-block;
+}
+
+.aurora-container {
+    position: relative;
+}
+
+.aurora-sphere {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    animation: floatAurora 30s infinite alternate ease-in-out;
+}
+
+.aurora-gold {
+    background: radial-gradient(circle, var(--color-primary-light) 0%, rgba(207,151,42,0) 70%);
+}
+
+.aurora-teal {
+    background: radial-gradient(circle, #0ea5e9 0%, rgba(14,165,233,0) 70%);
+}
+
+.aurora-green {
+    background: radial-gradient(circle, #10b981 0%, rgba(16,185,129,0) 70%);
+}
+
+@keyframes floatAurora {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(90px, 50px) scale(1.1);
+    }
+    100% {
+        transform: translate(-50px, -70px) scale(0.95);
+    }
 }
 
 img {
@@ -163,6 +216,7 @@ button, input, textarea {
 .section {
     padding: 8rem 0;
     position: relative;
+    z-index: 1;
 }
 
 .section-light {
@@ -1456,6 +1510,75 @@ button, input, textarea {
     }
     
     .footer-col:first-child {
+        grid-column: span 1;
+    }
+}
+
+/* ==========================================================================
+   BENTO GRID SYSTEM & SPOTLIGHT EFFECT
+   ========================================================================== */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+}
+
+.bento-col-3 { grid-column: span 3; }
+.bento-col-4 { grid-column: span 4; }
+.bento-col-5 { grid-column: span 5; }
+.bento-col-6 { grid-column: span 6; }
+.bento-col-7 { grid-column: span 7; }
+.bento-col-8 { grid-column: span 8; }
+.bento-col-9 { grid-column: span 9; }
+.bento-col-12 { grid-column: span 12; }
+
+.bento-card {
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-gold-hover);
+    box-shadow: 0 20px 45px rgba(207, 151, 42, 0.08);
+}
+
+.bento-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(207, 151, 42, 0.04) 0%, rgba(207, 151, 42, 0) 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bento-card:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .bento-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.25rem;
+    }
+    .bento-col-3, .bento-col-4 { grid-column: span 3; }
+    .bento-col-5, .bento-col-6, .bento-col-7, .bento-col-8 { grid-column: span 6; }
+}
+
+@media (max-width: 576px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .bento-col-3, .bento-col-4, .bento-col-5, .bento-col-6, .bento-col-7, .bento-col-8, .bento-col-9, .bento-col-12 {
         grid-column: span 1;
     }
 }
