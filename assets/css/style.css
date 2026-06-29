@@ -11,25 +11,25 @@
    ========================================================================== */
 :root {
     /* Color Palette */
-    --bg-dark-deep: #f6faf9;      /* Warmer, cream-tinted slate background */
-    --bg-dark-base: #ffffff;      /* Pure white base */
-    --bg-dark-card: rgba(255, 255, 255, 0.72); /* Translucent glass card background */
-    --bg-dark-hover: rgba(239, 245, 243, 0.6); /* Translucent hover state */
+    --bg-dark-deep: #05080c;      /* Deep Obsidian Space */
+    --bg-dark-base: #0a0f18;      /* Obsidian Base */
+    --bg-dark-card: rgba(16, 24, 39, 0.68); /* Dark charcoal glass */
+    --bg-dark-hover: rgba(22, 32, 51, 0.85); /* Translucent hover state */
     
-    --color-primary: #a37210;     /* Deep refined corporate gold for readability */
-    --color-primary-light: #cf972a;/* Brand gold */
-    --color-primary-glow: rgba(207, 151, 42, 0.12);
+    --color-primary: #dfa837;     /* Vibrant luxury gold */
+    --color-primary-light: #f5b942;
+    --color-primary-glow: rgba(223, 168, 55, 0.15);
     
-    --text-white: #061f1a;        /* Ultra dark slate-green for high-contrast headings */
-    --text-main: #192e2b;         /* Refined body text */
-    --text-muted: #5e7772;        /* Muted gray-green */
+    --text-white: #ffffff;        /* Pure white for maximum contrast */
+    --text-main: #e2e8f0;         /* Highly readable cool slate-gray */
+    --text-muted: #94a3b8;
     
-    --border-glass: rgba(14, 62, 52, 0.07);
-    --border-gold: rgba(163, 114, 16, 0.2);
-    --border-gold-hover: rgba(163, 114, 16, 0.6);
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --border-gold: rgba(223, 168, 55, 0.22);
+    --border-gold-hover: rgba(223, 168, 55, 0.6);
     
-    --glass-blur: blur(16px);     /* High blur for premium translucent feel */
-    --glass-shadow: 0 15px 35px rgba(14, 62, 52, 0.05);
+    --glass-blur: blur(18px);
+    --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
     
     /* Layout & Spacing */
     --max-width: 1200px;
@@ -352,12 +352,12 @@ button, input, textarea {
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(5, 8, 12, 0.82);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--border-glass);
     padding: 0.75rem 0;
-    box-shadow: 0 4px 30px rgba(14, 62, 52, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
 
 .header .container {
@@ -1238,7 +1238,7 @@ button, input, textarea {
    FOOTER
    ========================================================================== */
 .footer {
-    background-color: #030a08;
+    background-color: #04060a;
     border-top: 1px solid var(--border-glass);
     padding: 5rem 0 2rem;
 }
@@ -1402,7 +1402,7 @@ button, input, textarea {
         width: 80%;
         max-width: 320px;
         height: 100vh;
-        background: rgba(5, 16, 14, 0.98);
+        background: rgba(5, 8, 12, 0.98);
         backdrop-filter: var(--glass-blur);
         -webkit-backdrop-filter: var(--glass-blur);
         border-left: 1px solid var(--border-glass);
