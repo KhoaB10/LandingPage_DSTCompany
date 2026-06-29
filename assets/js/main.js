@@ -298,44 +298,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================================================
-    // RIVE PLAYER INITIALIZATION
-    // ==========================================================================
-    const riveCanvas = document.getElementById('rive-canvas');
-    const riveLoader = document.getElementById('rive-loader');
-
-    if (riveCanvas && typeof rive !== 'undefined') {
-        const r = new rive.Rive({
-            src: 'https://cdn.rive.app/animations/off_road_car_v7.riv',
-            canvas: riveCanvas,
-            autoplay: true,
-            stateMachines: 'motion',
-            onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
-                if (riveLoader) {
-                    riveLoader.style.opacity = '0';
-                    setTimeout(() => {
-                        riveLoader.style.display = 'none';
-                    }, 400);
-                }
-                console.log("Rive animation loaded successfully!");
-            },
-            onError: (err) => {
-                console.error("Error loading Rive animation:", err);
-                if (riveLoader) {
-                    const span = riveLoader.querySelector('span');
-                    if (span) span.textContent = 'Không thể tải hoạt ảnh Rive.';
-                    const spinner = riveLoader.querySelector('div');
-                    if (spinner) spinner.style.display = 'none';
-                }
-            }
-        });
-
-        // Resize drawing surface on window resize
-        window.addEventListener('resize', () => {
-            if (r) {
-                r.resizeDrawingSurfaceToCanvas();
-            }
-        });
-    }
 });
