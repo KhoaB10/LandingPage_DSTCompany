@@ -6,6 +6,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Use global DST_BASE_URL injected by PHP, fallback to empty string for local use
+    const basePath = window.DST_BASE_URL || '';
+
     // ==========================================================================
     // SCROLLED HEADER & MOBILE NAV
     // ==========================================================================
@@ -168,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(() => {
                 // Update text and images
-                serviceImg.src = data.img;
+                serviceImg.src = basePath + data.img;
                 serviceImg.alt = data.title;
                 serviceTitle.textContent = data.title;
                 serviceDesc.textContent = data.desc;
