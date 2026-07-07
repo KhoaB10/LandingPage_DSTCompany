@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ads: {
             title: "Dịch Vụ Quảng Cáo Đa Kênh (ADS)",
             desc: "DST Group xây dựng và triển khai các chiến dịch quảng cáo đa kênh thực chiến (Facebook, Google, TikTok, Zalo). Chúng tôi tập trung tối đa vào chỉ số chuyển đổi, tối ưu chi phí CPA và nâng cao tỷ suất sinh lời ROI trên từng đồng ngân sách quảng cáo của bạn.",
-            img: "assets/images/service_ads.png",
+            img: "assets/images/service_ads.jpg",
             bullets: [
                 "Tối ưu ngân sách quảng cáo đa kênh, bám sát CPA",
                 "Quảng cáo Facebook & Instagram nhắm đúng tệp",
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tiktok: {
             title: "TikTok Shop Partner & MCN TikTok",
             desc: "Là đối tác chính thức TSP & MCN của TikTok tại Quảng Ninh, chúng tôi giúp cá nhân (Creators) và doanh nghiệp (Sellers) bùng nổ đơn hàng, xây dựng kênh triệu view, tối ưu giỏ hàng chuẩn SEO và kết nối mạng lưới KOC/KOL livestream thực chiến.",
-            img: "assets/images/service_tiktok.png",
+            img: "assets/images/service_tiktok.jpg",
             bullets: [
                 "Xây dựng & Định hướng kênh TikTok cá nhân/doanh nghiệp",
                 "Setup & Vận hành gian hàng TikTok Shop chuẩn SEO",
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         design: {
             title: "Thiết Kế Thương Hiệu & Web Độc Bản",
             desc: "Định hình vị thế thương hiệu bằng thiết kế Web/Landing Page, Logo và Hồ sơ năng lực độc bản, chuyên nghiệp. Một giao diện và ấn phẩm đẳng cấp sẽ giúp nâng cao uy tín sản phẩm, cho phép bạn bán với giá cao hơn đối thủ cạnh tranh.",
-            img: "assets/images/service_design.png",
+            img: "assets/images/service_design.jpg",
             bullets: [
                 "Thiết kế Website & Landing page tối ưu CRO chuẩn SEO",
                 "Thiết kế Logo & Bộ nhận diện thương hiệu chuyên nghiệp",
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         studio: {
             title: "Studio & Media Thực Chiến",
             desc: "Sản xuất hình ảnh chất lượng cao và video ngắn (TikTok, Reels, Shorts) có nội dung lôi cuốn, giữ chân người xem. DST Group mang đến các kịch bản TVC và video quảng cáo sáng tạo, kích thích khách hàng ra quyết định mua hàng ngay lập tức.",
-            img: "assets/images/service_studio.png",
+            img: "assets/images/service_studio.jpg",
             bullets: [
                 "Quay TVC giới thiệu sản phẩm & doanh nghiệp chuyên nghiệp",
                 "Chụp ảnh sản phẩm, dịch vụ làm tư liệu chạy Ads đỉnh cao",
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setup: {
             title: "Tư Vấn & Setup Vận Hành Trọn Gói",
             desc: "Chuyển giao giải pháp và setup quy trình vận hành tinh gọn, chuyên nghiệp cho chuỗi Nhà hàng - Khách sạn - Du thuyền. Chúng tôi giúp bạn tối ưu hóa chi phí đầu tư ban đầu, đào tạo nhân sự bài bản và lập kế hoạch khai trương bùng nổ doanh số.",
-            img: "assets/images/service_setup.png",
+            img: "assets/images/service_setup.jpg",
             bullets: [
                 "Xây dựng phương hướng chiến lược & Kế hoạch phát triển",
                 "Thiết kế quy trình vận hành chuẩn hóa cho từng bộ phận",
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         booking: {
             title: "Dịch Vụ Booking KOLs & Content Creator",
             desc: "Kết nối doanh nghiệp với mạng lưới KOC/KOL đa dạng phân khúc, gia tăng uy tín và độ phủ thương hiệu lập tức. DST Group xây dựng chiến lược content sâu sắc chạm tới cảm xúc khách hàng, tăng trưởng đơn hàng bền vững.",
-            img: "assets/images/service_booking.png",
+            img: "assets/images/service_booking.jpg",
             bullets: [
                 "Booking KOC/KOL đa dạng phân khúc bám sát tệp khách",
                 "Booking ca sĩ, người mẫu, người nổi tiếng cho sự kiện lớn",
